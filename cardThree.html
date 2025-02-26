@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic UI/UX Designer</title>
+
+<style>
+    .navbar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-container nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    flex-wrap: nowrap; 
+}
+
+.navbar-container button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(18, 2, 46);   
+    color:bisque;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: bisque; /* Ensure text color is consistent */
+}
+
+body {
+    background-image: url(dark-mode-08.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(2, 2, 46, 0.541);
+    color: bisque;
+    font-family:'segoe UI';
+    text-align: center;
+}
+
+.skills-container {
+  margin-top: 56px;
+  margin-bottom: 0px; 
+}
+.skills-container ul {
+    list-style: none;
+    font-size: x-large;
+}
+h3 {
+    font-size: x-large;  
+}
+
+</style>
+    
+</head>
+<body>
+    <div class="navbar-container">
+        <nav>
+            <button >
+                <a href="index.html" class="btn">Home</a>
+            </button>
+            <button>figma</button>
+            <button>Behance</button>
+            <button>Framer</button>
+        </nav>
+      </div>
+
+      <div class="skills-container">
+        <h3>Product Design Skills</h3>
+        <ul>
+            <li>Product strategy</li>
+            <li>Product outcome</li>
+            <li>Opportunities and solution</li>
+            <li>Prioritization</li>
+            <li>Project output management</li>
+        </ul>
+    </div>    
+        
+    </div>
+</body>
+</html>

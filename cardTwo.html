@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic UI/UX Designer</title>
+
+<style>
+    .navbar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-container nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    flex-wrap: nowrap; 
+}
+
+.navbar-container button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(18, 2, 46);   
+    color:bisque;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: bisque; /* Ensure text color is consistent */
+}
+
+body {
+    background-image: url(dark-mode-08.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(2, 2, 46, 0.541);
+    color: bisque;
+    font-family: 'segoe UI';
+    text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+  max-width: 800px;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 250px; /* Ensures they stay side by side until the screen is too small */
+  padding: 16px;
+  border-radius: 8px;
+}
+
+
+.skills-column ul {
+  list-style: none;
+  padding: 8px;
+  font-size: x-large;
+  justify-content: center;
+}
+
+.skills-column li {
+  margin-bottom: 8px;
+}
+h3 {
+  font-size: x-large;
+}
+
+/* Responsive: Stack in one row on small screens */
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+</style>
+    
+</head>
+<body>
+    <div class="navbar-container">
+        <nav>
+            <button >
+                <a href="index.html" class="btn">Home</a>
+            </button>
+            <button>figma</button>
+            <button>Behance</button>
+            <button>Framer</button>
+        </nav>
+      </div>
+
+      <div class="skills-container">
+        <div class="skills-column">
+          <h3>UI Skills</h3>
+          <ul>
+            <li>Color theory</li>
+            <li>Typography</li>
+            <li>Design patterns</li>
+            <li>Pixel-perfect design</li>
+            <li>Accessibility</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3>UX Skills</h3>
+          <ul>
+            <li>Wireframing & prototyping</li>
+            <li>User research</li>
+            <li>Experimentation & testing</li>
+            <li>Target group analysis</li>
+            <li>Information architecture</li>
+            <li>Copywriting for UX</li>
+          </ul>
+        </div>
+    </div>      
+        
+        
+    </div>
+</body>
+</html>

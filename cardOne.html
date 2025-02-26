@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic UI/UX Designer</title>
+
+<style>
+    .navbar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-container nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    flex-wrap: nowrap; 
+}
+
+.navbar-container button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(18, 2, 46);   
+    color:bisque;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: bisque; /* Ensure text color is consistent */
+}
+
+.accordion-title:hover {
+    background: rgba(19, 0, 48, 0.6);
+}
+
+.card-content .btn{
+    text-decoration: none;
+    color: bisque; /* Ensure text color is consistent */
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(18, 2, 46);
+    border-radius: 8px;
+    margin-bottom: 8px
+}
+
+
+body {
+    background-image: url(dark-mode-08.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(2, 2, 46, 0.541);
+    color: bisque;
+    font-family:'segoe UI';
+    text-align: center;
+}
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+transition: transform 0.3s ease-in-out;            
+}
+.accordion-content:hover {
+    background: rgba(19, 0, 48, 0.4);
+}
+
+h2 {
+font-size: 3rem;
+margin-top: 48px;
+margin-bottom: 16px;
+}
+p {
+font-size: 1.5rem;
+max-width: 600px;
+}
+.accordion {    width: 80%;    max-width: 800px;    margin-top: 40px;    text-align: center;    gap: 16px;}.accordion-title {
+font-size: 2rem;
+padding: 15px;
+cursor: pointer;
+display: inline-block;
+ padding: 8px 16px;
+background-color: rgb(18, 2, 46);
+text-decoration: none;
+border-radius: 8px;
+ margin-bottom: 8px;
+color: bisque;
+}
+.accordion-content {
+    font-size: 1.2rem;
+    padding: 15px;
+    display: none;
+}
+.active .accordion-content {
+    display: block;
+}
+</style>
+    <script>
+        function toggleAccordion(event) {
+            let content = event.currentTarget.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar-container">
+        <nav>
+            <button >
+                <a href="index.html" class="btn">Home</a>
+            </button>
+            <button>figma</button>
+            <button>Behance</button>
+            <button>Framer</button>
+        </nav>
+      </div>
+
+    <div class="container">
+        <h2>Futuristic UI/UX Designer</h2>
+        <p>Crafting immersive and intelligent designs using Figma AI, Framer AI, and Behance AI.</p>
+        
+        <div class="accordion">
+            <div class="accordion-title" onclick="toggleAccordion(event)">Figma AI</div>
+            <div class="accordion-content">Smart and automated UI design. AI enhances wireframing, component creation, and real-time collaboration.</div>
+            
+            <div class="accordion-title" onclick="toggleAccordion(event)">Framer AI</div>
+            <div class="accordion-content">AI-powered prototyping. Enables dynamic interactions, automated animations, and seamless testing.</div>
+            
+            <div class="accordion-title" onclick="toggleAccordion(event)">Behance AI</div>
+            <div class="accordion-content">AI-enhanced portfolio showcase. Uses AI to suggest project layouts, improve visibility, and optimize engagement.</div>
+        </div>
+    </div>
+</body>
+</html>
