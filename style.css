@@ -5,24 +5,13 @@
 }
 
 h1{
-    text-align: center;
     color: rgb(9, 7, 36);
-    width: 32ch;
-    font-size: xx-large;
+    font-size: x-large;
     font-family: 'segoe UI';
-    text-wrap: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(20) infinite alternate-reverse;
     margin-top: 56px;
 }
  
-@keyframes typing {
-    from {
-        width: 0ch;
-    }    
-}
-
-.navbar-container {
+navbar-container {
     position: fixed;
     top: 0;
     right: 0;
