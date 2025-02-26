@@ -3,7 +3,7 @@ h1{
     color: rgb(9, 7, 36);
     font-size: x-large;
     font-family: 'segoe UI';
-    margin-top: 56px;
+    margin-top: 24px;
 }
  
 navbar-container {
@@ -57,6 +57,7 @@ h2 {
     color: bisque;
     font-family: 'segoe UI';
     text-align: right;
+    margin-top: 56px;
 }
 
 .conta p {
