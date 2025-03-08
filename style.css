@@ -1,11 +1,16 @@
 
 h1{
-    color: rgb(9, 7, 36);
+    color: #242e49;
     font-size: x-large;
-    font-family: 'segoe UI';
+    font-family: 'Segoe UI';
     margin-top: 24px;
+    font-weight: lighter;
 }
- 
+
+h1 span {
+    font-family: "Brush Script MT", cursive;
+    letter-spacing: 2px;
+}
 navbar-container {
     position: fixed;
     top: 0;
@@ -26,35 +31,37 @@ navbar-container {
     flex-wrap: nowrap; 
 }
 
-.navbar-container button {
+.navbar-container .btn {
     padding: 8px 16px;
     border: none;
     cursor: pointer;
     border-radius: 8px;
-    background: rgb(18, 2, 46);   
-    color:bisque;
-}
-
-.navbar-container button:hover {
-    background: rgba(19, 0, 48, 0.4);
-}
-
-body {
-    background-image: url(dark-mode-08.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    background-color: rgba(2, 2, 46, 0.541); 
-}
-
-p {
-    color: bisque;
+    background: #10194e;   
+    color:#055c9d;
+    text-decoration: none;
     font-family: 'segoe UI';
 }
 
+.navbar-container button:hover {
+    background: #071777;
+}
+
+body {   
+    background-color: #060421;
+}
+
+.mypp {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #071777;
+}
+p {
+    color: #055c9d;
+    font-family: 'segoe UI';
+}
 h2 {
-    color: bisque;
+    color: #68bbe3;
     font-family: 'segoe UI';
     text-align: right;
     margin-top: 56px;
@@ -87,7 +94,7 @@ h2 {
 }
 
 .card-content{
-    color: bisque;
+    color: #242e49;
     font-family: 'segoe UI';
     margin-left: 8px;
     margin-right: 8px;
@@ -98,9 +105,12 @@ h2 {
 .card-content .btn{
     display: inline-block;
     padding: 8px 16px;
-    background-color: rgb(18, 2, 46);
+    background-color: #10194e;
     text-decoration: none;
     border-radius: 8px;
     margin-bottom: 8px;
-    color: bisque;
+    color: #055c9d;
+}
+.btn:hover {
+    background: #0026ff;
 }
