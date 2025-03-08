@@ -14,7 +14,6 @@
     max-width: 400px; 
     padding: 10px;
     z-index: 1000;
-    backdrop-filter: blur(8px);
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
@@ -31,24 +30,23 @@
     border: none;
     cursor: pointer;
     border-radius: 8px;
-    background: rgb(18, 2, 46);   
-    color:bisque;
+    background: #10194e;  
     text-decoration: none;
 }
+.navbar-container button:hover {
+    background: #071777;
+}
+
 
 a {
     text-decoration: none;
-    color: bisque; /* Ensure text color is consistent */
+    color: #055c90; /* Ensure text color is consistent */
 }
 
 body {
-    background-image: url(dark-mode-08.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    background-color: rgba(2, 2, 46, 0.541);
-    color: bisque;
+    
+    background-color: #060421;
+    color: #055c90;
     font-family: 'segoe UI';
     text-align: center;
 }
@@ -101,9 +99,7 @@ h3 {
             <button >
                 <a href="index.html" class="btn">Home</a>
             </button>
-            <button>figma</button>
-            <button>Behance</button>
-            <button>Framer</button>
+            
         </nav>
       </div>
 
