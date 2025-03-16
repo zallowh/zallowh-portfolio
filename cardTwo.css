@@ -1,0 +1,110 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    max-width: 400px; 
+    padding: 8px;
+    z-index: 1000;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-container nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    flex-wrap: nowrap; 
+}
+
+.navbar-container button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #10194e;  
+    text-decoration: none;
+}
+.navbar-container button:hover {
+    background: #071777;
+}
+
+
+a {
+    text-decoration: none;
+    color: #055c90; /* Ensure text color is consistent */
+}
+
+body {
+    
+    background-color: #060421;
+    color: #055c90;
+    font-family: 'segoe UI';
+    text-align: center;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+/* Responsive: Stack in one row on small screens */
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.mute-button {
+    position: fixed;
+    max-width: 60px; 
+    z-index: 1000;
+    border-radius: 8px;
+    bottom: 16px;
+    right: 16px;
+    background: #10194e;
+    color: #055c90;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+}
+ video {
+    width: 10%;
+}
+        #customer-journey {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.journey-step {
+    margin-bottom: 24px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #055c90;
+    font-size: 1.5em;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.journey-cta {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
