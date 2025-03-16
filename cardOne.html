@@ -43,11 +43,6 @@ a {
     background: #071777;
 }
 
-
-.accordion-title:hover {
-    background: #0026ff;
-}
-
 .card-content .btn{
     text-decoration: none;
     color: #055c9d; /* Ensure text color is consistent */
@@ -58,23 +53,12 @@ a {
     margin-bottom: 8px
 }
 
-
 body {
+    padding: 8px;
     background-color: #060421;
     color: #055c9d;
     font-family:'segoe UI';
     text-align: center;
-}
-.container {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-min-height: 100vh;
-transition: transform 0.3s ease-in-out;            
-}
-.accordion-content:hover {
-    background: #0026ff;
 }
 
 h2 {
@@ -82,42 +66,53 @@ font-size: 3rem;
 margin-top: 48px;
 margin-bottom: 16px;
 }
-p {
-font-size: 1.5rem;
-max-width: 600px;
+
+ul {
+  text-decoration: none;
 }
-.accordion {    width: 80%;    max-width: 800px;    margin-top: 40px;    text-align: center;    gap: 16px;}.accordion-title {
-font-size: 2rem;
-padding: 15px;
-cursor: pointer;
-display: inline-block;
- padding: 8px 16px;
-background-color: #10194e;
-text-decoration: none;
-border-radius: 8px;
- margin-bottom: 8px;
-color: #055c9d;
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  max-width: 800px;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
 }
-.accordion-content {
-    font-size: 1.2rem;
-    padding: 16px;
-    display: none;
+
+.skills-column {
+  flex: 1;
+  min-width: 250px; /* Ensures they stay side by side until the screen is too small */
+  padding: 8px;
+  border-radius: 8px;
+  
 }
-.active .accordion-content {
-    display: block;
+
+ ul {
+  list-style: none;
+  padding: 8px;
+  font-size: x-large;
+  justify-content: center;
 }
-</style>
-    <script>
-        function toggleAccordion(event) {
-            let content = event.currentTarget.nextElementSibling;
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+
+.skills-column li {
+  margin-bottom: 8px;
+}
+h3 {
+  font-size: x-large;
+}
+
+/* Responsive: Stack in one row on small screens */
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+</style>  
 </head>
 <body>
-
-    
-
     <div class="navbar-container">
         <nav>
             <button >
@@ -128,25 +123,55 @@ color: #055c9d;
       </div>
 
     <div class="container">
-        <h2>Futuristic UI/UX Designer</h2>
-        <p>Crafting immersive and intelligent designs using Figma AI, Framer AI, and Behance AI.</p>
+        <h2>About me</h2>
+        <p>My approach is rooted in color theory, typography, design patterns, and pixel-perfect execution, ensuring every design is both functional and aesthetically refined. I prioritize accessibility to create inclusive digital experiences for all users.
+        </p>    
+        <p><strong>Beyond UI, I do UX research, wireframing, prototyping, experimentation, and user testing, transforming insights into impactful solutions. With a deep understanding of product strategy, prioritization, and outcome-driven design, I help businesses create products that are not only beautiful but also highly effective.</strong></p>
+            
+        <ul>
+                <p>Leveraging AI-driven tools, I enhance efficiency and creativity in design and development. By integrating <strong>Figma AI, Framer AI, and Behance AI</strong>, I accelerate workflows, automate repetitive tasks, and generate innovative design solutions in record time. AI helps me with:</p>
+                <ul>
+                    <li><strong>Automated wireframing & prototyping</strong> for rapid iterations</li>
+                    <li><strong>AI-enhanced user research & testing</strong> for data-driven insights</li>
+                    <li><strong>Smart design suggestions & accessibility improvements</strong></li>
+                    <li><strong>Optimized content generation & layout recommendations</strong></li>
+                </ul>
+                <p>By embracing AI in the design process, I ensure <strong>faster production, higher precision, and more innovative solutions</strong> that elevate user experiences to the next level.</p>
+            
+        </ul>
         
-        <div class="accordion">
-            <div class="accordion-title" onclick="toggleAccordion(event)">Figma AI</div>
-            <div class="accordion-content">Smart and automated UI design. AI enhances wireframing, component creation, and real-time collaboration.</div>
-            
-            <div class="accordion-title" onclick="toggleAccordion(event)">Framer AI</div>
-            <div class="accordion-content">AI-powered prototyping. Enables dynamic interactions, automated animations, and seamless testing.</div>
-            
-            <div class="accordion-title" onclick="toggleAccordion(event)">Behance AI</div>
-            <div class="accordion-content">AI-enhanced portfolio showcase. Uses AI to suggest project layouts, improve visibility, and optimize engagement.</div>
-        </div>
-
+            <p>I’m always exploring new ways to innovate and push the boundaries of design, AI, and technology. Let’s build something amazing together! 🚀</p>
+        
+        
             <h3>Languages and Tools:</h3>
         <div class="icons">
-            <p> <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noreferrer"> <img src="https://docs.amplify.aws/assets/logo-dark.svg" alt="amplify" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://canvasjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg" alt="canvasjs" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://www.framer.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/framer/framer-icon.svg" alt="framer" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> </p>
+            <p> <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noreferrer"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a>  <a href="https://canvasjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg" alt="canvasjs" width="70" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://www.framer.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/framer/framer-icon.svg" alt="framer" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> </p>
         </div>
 
+        <div class="skills-container">
+            <div class="skills-column">
+              <h3>UI Skills</h3>
+              <ul>
+                <li>Color theory</li>
+                <li>Typography</li>
+                <li>Design patterns</li>
+                <li>Pixel-perfect design</li>
+                <li>Accessibility</li>
+              </ul>
+            </div>
+            <div class="skills-column">
+              <h3>UX Skills</h3>
+              <ul>
+                <li>Wireframing & prototyping</li>
+                <li>User research</li>
+                <li>Experimentation & testing</li>
+                <li>Target group analysis</li>
+                <li>Information architecture</li>
+                <li>Copywriting for UX</li>
+              </ul>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>
