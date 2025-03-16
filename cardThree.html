@@ -6,18 +6,6 @@
     <title>Futuristic UI/UX Designer</title>
 
 <style>
-    .navbar-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%; 
-    max-width: 400px; 
-    padding: 10px;
-    z-index: 1000;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-
 .navbar-container nav {
     display: flex;
     justify-content: flex-end;
@@ -25,14 +13,21 @@
     flex-wrap: nowrap; 
 }
 
-.navbar-container button {
+ a {
     padding: 8px 16px;
     border: none;
     cursor: pointer;
     border-radius: 8px;
     background: #10194e;   
+    color:#055c9d;
     text-decoration: none;
+    font-family: 'segoe UI';
 }
+
+.navbar-container a:hover {
+    background: #071777;
+}
+
 
 a {
     text-decoration: none;
@@ -44,19 +39,71 @@ body {
     background-color: #060421;
     color:#055c9d;
     font-family:'segoe UI';
+}
+h2 {
     text-align: center;
 }
 
-.skills-container {
-  margin: 56px;
+img {
+    width: fit-content;
+    height: 200px;
+    border-radius: 16px;
 }
-.skills-container ul {
-    list-style: none;
-    font-size: x-large;
+
+.figma {
+    border-radius: 16px;
+    padding-top: 56px;
+    
 }
-h3 {
-    font-size: x-large;  
+
+.figmad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
+
+.showimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+}
+
+.showimg img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.showimg p {
+    margin: 4px 0;
+    width: 100%;
+}
+
+/* Responsive for screens below 600px */
+@media (max-width: 600px) {
+    .figmad {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .showimg {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .showimg img {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 </style>
     
@@ -64,24 +111,30 @@ h3 {
 <body>
     <div class="navbar-container">
         <nav>
-            <button >
-                <a href="index.html" class="btn">Home</a>
-            </button>
             
+                <a href="index.html" class="btn">Home</a> 
+                       
         </nav>
       </div>
 
-      <div class="skills-container">
-        <h3>Product Design Skills</h3>
-        <ul>
-            <li>Product strategy</li>
-            <li>Product outcome</li>
-            <li>Opportunities and solution</li>
-            <li>Prioritization</li>
-            <li>Project output management</li>
-        </ul>
-    </div>    
-        
+      <div class="figma">
+        <h2>F I G M A Design </h2>  
+      <div class="figmad">
+        <div class="showimg">
+            <img src="show.png" />
+            <p>Effective product branding combines design, typography, and color psychology to create a visually appealing label that communicates the product’s essence,
+             ingredients, and unique identity—ensuring it stands out while building trust and recognition.</p>
+            
+        </div>
+          
+        <div class="showimg">
+            <img src="prototype.png" />
+            <p></p>
+            <a href="https://www.figma.com/proto/IikxiddpWIfCiODc73SVul/apple-watch?page-id=0%3A1&node-id=4-95&p=f&viewport=45%2C320%2C0.06&t=z2MnHgazZbfSkGFn-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A125" 
+            class="btn">Prototype</a>
+        </div>
     </div>
+    </div>
+</div>
 </body>
 </html>
