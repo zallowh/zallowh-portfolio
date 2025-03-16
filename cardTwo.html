@@ -4,94 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuristic UI/UX Designer</title>
+    <link rel="stylesheet" href="cardTwo.css">
 
-<style>
-    .navbar-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%; 
-    max-width: 400px; 
-    padding: 10px;
-    z-index: 1000;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.navbar-container nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 16px;
-    flex-wrap: nowrap; 
-}
-
-.navbar-container button {
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    background: #10194e;  
-    text-decoration: none;
-}
-.navbar-container button:hover {
-    background: #071777;
-}
-
-
-a {
-    text-decoration: none;
-    color: #055c90; /* Ensure text color is consistent */
-}
-
-body {
-    
-    background-color: #060421;
-    color: #055c90;
-    font-family: 'segoe UI';
-    text-align: center;
-}
-
-.skills-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 56px;
-  max-width: 800px;
-  flex-wrap: wrap;
-  margin-bottom: 0px;
-}
-
-.skills-column {
-  flex: 1;
-  min-width: 250px; /* Ensures they stay side by side until the screen is too small */
-  padding: 16px;
-  border-radius: 8px;
-}
-
-
-.skills-column ul {
-  list-style: none;
-  padding: 8px;
-  font-size: x-large;
-  justify-content: center;
-}
-
-.skills-column li {
-  margin-bottom: 8px;
-}
-h3 {
-  font-size: x-large;
-}
-
-/* Responsive: Stack in one row on small screens */
-@media (max-width: 600px) {
-  .skills-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-</style>
-    
 </head>
 <body>
     <div class="navbar-container">
@@ -102,31 +16,87 @@ h3 {
             
         </nav>
       </div>
+      <section id="customer-journey">
+        <h2>How My Expertise Enhances the Customer Journey</h2>
+    
+        <div class="journey-step">
+            <h3>1. Awareness – Capturing Attention & Building Interest</h3>
+            <p>Before users interact with a product, they need to find it. I apply UX-focused marketing strategies, including SEO, Meta Ads, Google Ads, and audience targeting, to ensure your product reaches the right users at the right time.</p>
+            <ul>
+                <li>🔹 <strong>Optimized Landing Pages</strong> – Designed for high conversions with clear CTAs.</li>
+                <li>🔹 <strong>User-Centered Visuals & Messaging</strong> – Ensuring first impressions spark interest.</li>
+                <li>🔹 <strong>AI-Powered Insights</strong> – Using Meta Pixels, Google Analytics, and Trends to refine engagement strategies.</li>
+            </ul>
+        </div>
+    
+        <div class="journey-step">
+            <h3>2. Consideration – Designing Intuitive & Engaging Experiences</h3>
+            <p>Once users show interest, they need a seamless experience that keeps them engaged. This is where UX & UI design plays a crucial role.</p>
+            <ul>
+                <li>🔹 <strong>Wireframing & Prototyping</strong> – Mapping out intuitive navigation and interactions.</li>
+                <li>🔹 <strong>Interactive & Data-Driven Design</strong> – Ensuring smooth flows that reduce friction.</li>
+                <li>🔹 <strong>Behavioral Analysis</strong> – Using AI-driven tools to study user interactions and optimize accordingly.</li>
+            </ul>
+        </div>
+    
+        <div class="journey-step">
+            <h3>3. Decision – Creating a Frictionless Path to Action</h3>
+            <p>Users should feel confident and motivated to take action, whether it’s signing up, purchasing, or engaging with your platform.</p>
+            <ul>
+                <li>🔹 <strong>Simplified User Journeys</strong> – Streamlining checkout, sign-ups, and onboarding.</li>
+                <li>🔹 <strong>Conversion-Optimized UI</strong> – Ensuring design elements guide users towards action.</li>
+                <li>🔹 <strong>Personalized Experiences</strong> – Using AI and behavioral insights to tailor interactions.</li>
+            </ul>
+        </div>
+    
+        <div class="journey-step">
+            <h3>4. Retention – Building Long-Term User Loyalty</h3>
+            <p>A great product continues to deliver value after the first interaction, turning users into loyal customers and advocates.</p>
+            <ul>
+                <li>🔹 <strong>Onboarding & Engagement Strategies</strong> – Designing experiences that encourage continued use.</li>
+                <li>🔹 <strong>Accessibility & Usability Improvements</strong> – Ensuring every user can interact effortlessly.</li>
+                <li>🔹 <strong>Data-Backed Optimizations</strong> – Using analytics, A/B testing, and user feedback to refine and improve the experience over time.</li>
+            </ul>
+        </div>
+    
+        <div class="journey-cta">
+            <h3>Let’s Design for Every Step of the Journey</h3>
+            <p>By combining customer journey mapping, product design, and AI-driven innovation, I help businesses create products that attract, engage, and retain users—ultimately driving business growth.</p>
+            <p>Ready to craft a seamless customer experience? Let’s build something impactful!</p>
+        </div>
+    </section>
+    
 
-      <div class="skills-container">
-        <div class="skills-column">
-          <h3>UI Skills</h3>
-          <ul>
-            <li>Color theory</li>
-            <li>Typography</li>
-            <li>Design patterns</li>
-            <li>Pixel-perfect design</li>
-            <li>Accessibility</li>
-          </ul>
-        </div>
-        <div class="skills-column">
-          <h3>UX Skills</h3>
-          <ul>
-            <li>Wireframing & prototyping</li>
-            <li>User research</li>
-            <li>Experimentation & testing</li>
-            <li>Target group analysis</li>
-            <li>Information architecture</li>
-            <li>Copywriting for UX</li>
-          </ul>
-        </div>
-    </div>      
-        
+      <div class="video-container">
+        <video id="myVideo" autoplay loop muted playsinline>
+            <source src="capcut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="mute-button" onclick="toggleMute()">🔇 Mute</button>
+    </div>
+
+    <script>
+        const video = document.getElementById("myVideo");
+
+        // Toggle mute
+        function toggleMute() {
+            video.muted = !video.muted;
+        }
+
+        // Pause video when scrolled out of view
+        function checkVisibility() {
+            const rect = video.getBoundingClientRect();
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                if (video.paused) {
+                    video.play();
+                }
+            } else {
+                video.pause();
+            }
+        }
+
+        window.addEventListener("scroll", checkVisibility);
+    </script>
         
     </div>
 </body>
