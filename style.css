@@ -169,3 +169,28 @@ h2 {
     padding: 0px;
 
 }
+
+ol {
+    color: #055c9d;
+    margin: 4px;
+    padding: 4px;
+}
+
+a{
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #10194e;   
+    color:#055c9d;
+    text-decoration: none;
+    font-family: 'segoe UI';
+}
+
+a {
+    text-decoration: none;
+    color: #055c9d; /* Ensure text color is consistent */
+}
+a:hover {
+    background: #0026ff;
+}

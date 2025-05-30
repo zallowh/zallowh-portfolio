@@ -34,6 +34,45 @@ a {
     color: #055c9d; /* Ensure text color is consistent */
 }
 
+.myj {
+    margin: 16px;
+    padding: 16px;
+}
+
+.listings li {
+    align-content: center;
+    list-style: none;
+    font-size: large;
+    margin: 24px;
+    padding: 0px;
+
+}
+
+h3 {
+    font-size: x-large;
+    color: #055c9d;
+  }
+
+ul {
+    color: #055c9d;
+    margin: 4px;
+    padding: 4px;
+}
+
+
+p {
+    color: #055c9d;
+    font-family: 'segoe UI';
+}
+h2 {
+    color: #68bbe3;
+    font-family: 'segoe UI';
+    text-align: right;
+    margin-top: 56px;
+    margin-bottom: 24px;
+}
+
+
 body {
     
     background-color: #060421;
@@ -113,6 +152,35 @@ img {
 
 }
 
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .cart img {
+    width: 20%; /* 4 images per row */
+    height: auto;
+    border-radius: 12px;
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .cart img {
+      width: 50%; /* 2 per row on smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cart img {
+      width: 100%; /* 1 per row on very small screens */
+    }
+  }
+
 
 </style>
     
@@ -124,35 +192,42 @@ img {
                 <a href="index.html" class="btn">Home</a> 
                        
         </nav>
+    </div>
+
+    <div class="myj">
+        <h3 style="text-align: center;">My Journey</h3>
+        <p><strong>My journey into the digital world began with front-end design, where I focused on crafting visually engaging and user-friendly interfaces. Mastering HTML, CSS, JavaScript, and React.js, I built interactive websites with a deep understanding of UI/UX principles, ensuring a seamless user experience.</strong></p>
+        <p><strong>As I expanded my skill set, I ventured into digital marketing, blending design with strategic marketing techniques to drive engagement and conversions and 
+            Now a Product Designer, crafting solutions that are usable, valuable, and delightful, combining user research, wireframing, prototyping, and UI design to improve real-world experiences.</strong></p>
+          <ul class="listings">
+            
+
+<ul class="listings">
+            <li><strong>UX Research</strong> – Conducting user interviews, persona development, and journey mapping to uncover pain points and drive design decisions.</li>
+
+            <li><strong>Wireframing & Prototyping</strong> – Translating insights into low- to high-fidelity wireframes and interactive prototypes using tools like Figma.</li>
+
+            <li><strong>UI Design Systems</strong> – Designing scalable, accessible components and maintaining visual consistency across interfaces.</li>
+
+            <li><strong>Usability Testing</strong> – Running feedback sessions and analyzing behavior to refine user flows and reduce friction.</li>
+
+            <li><strong>Problem-Solving & Iteration</strong> – Collaborating with stakeholders to define product goals, then iterating on solutions that balance user needs with business objectives.</li>
+
+            <li><strong>Responsive, Human-Centered Design</strong> – Prioritizing clarity, trust, and usability across platforms and screen sizes to ensure inclusive experiences.</li>
+
+            <li>With every project, I strive to bridge user needs and product strategy—turning insights into impactful design that delivers measurable results.</li>
+        
+            <li><strong>Logo Design</strong> – Crafting unique and memorable brand identities that align with business goals and audience expectations.</li>
+        
+            <li><strong>Social Media Marketing</strong> – Developing data-driven strategies to boost online presence across platforms, optimizing content for engagement and reach.</li>
+        
+            <li><strong>Meta Ads Manager</strong> – Running high-converting ad campaigns on Facebook & Instagram, optimizing for audience targeting, engagement, and ROI.</li>
+        
+            <li>Through this journey, I’ve combined <strong>design and AI</strong> to create impactful digital experiences, helping businesses enhance their online presence and achieve their goals efficiently.</li>
+        </ul>
+        
       </div>
 
-      <div class="figma">
-        <h2>F I G M A Design </h2>  
-      <div class="figmad">
-        <div class="showimg">
-            <img src="show.png" />
-            <p>Effective product branding combines design, typography, and color psychology to create a visually appealing label that communicates the product’s essence,
-             ingredients, and unique identity—ensuring it stands out while building trust and recognition.</p>
-            <a href="https://www.figma.com/proto/JcpIHdM04v6SupLBaUobwm/Untitled?page-id=0%3A1&node-id=1-7&p=f&viewport=195%2C120%2C0.35&t=yJpnpMFCjI89jGe8-1&scaling=scale-down&content-scaling=fixed"
-            class="btn">Presantion</a>
-            
-        </div>
-          
-        <div class="showimg">
-            <img src="prototype.png" />
-            <p>A fully functional e-commerce store inspired by Apple’s Watch storefront, designed with pixel-perfect precision. This clone replicates product browsing, smooth animations, and a responsive layout — showcasing both UI design skill and real-world UX flow.</p>
-            <a href="https://www.figma.com/proto/H0uCrjHu6boaznApSh6LV5/apple-eco?node-id=1-125&t=xY0am3l2d1j5MCMR-1"
-            class="btn">Prototype</a>
-        </div>
-
-        <div class="showimg">
-            <img src="whatsapp gui.jpg" style="max-width: 50%; height: auto; border-radius: 16px;" />
-            <p> A full clone of the WhatsApp user interface built with Figma, capturing both design and interaction flows.</p>
-            <a href="https://www.figma.com/proto/mxe1K7kjtTomvkMDXZoHWT/Untitled?node-id=1-2&t=LNy49OghEFuKIjhD-1" 
-            class="btn">Prototype</a>
-        </div>
-    </div>
-    </div>
-</div>
+      </div>
 </body>
 </html>
